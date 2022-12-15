@@ -1,22 +1,27 @@
+// import packages and classes
 
 import 'dart:io';
 
+// master class
 class Employee {
+  //variables
 
-  String? name ;
+  String? name;
 
-  int? id ;
+  int? id;
 
-  num? experienceYears ;
+  num? experienceYears;
 
+  //void fun
   getInfo() {
     print("enter your name");
-    name = stdin.readLineSync();
+    name = stdin.readLineSync();                 // insert value to the variable name
 
     print("enter your id");
-    id = int.parse(stdin.readLineSync()!);
+    id = int.parse(stdin.readLineSync()!);       // insert value to the variable id
 
     print("enter your experienceYears");
-    experienceYears = num.parse(stdin.readLineSync()!);
+    experienceYears = num.parse(
+        stdin.readLineSync()!);                  // insert value to the variable experienceYears
   }
 }
